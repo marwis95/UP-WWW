@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 
+ <title>Tytul</title>
+ <link rel="stylesheet" href="style.css"/>
+ 
+ <script>
+ function myFoo(){
+ kolor = ["#F0F0F0", "#FD89A1", "#A1B2C3", "#123456", "#9ABCDF"];
+ 
+ s = document.getElementById("box");
+ s.style.backgroundColor = kolor[Math.floor(Math.random() *5)];
+ s.style.width = "500px";
+ }
+ 
+ function ChechLength(){
+	var formularz = document.forms["form"].elements;
+	text="<tr>";
+	flag = 0;
+	//console.log(formularz[0].value);
+	for(i=0; i<formularz.length; i++){
+		if(formularz[i].value.length < 3){
+			formularz[i].style.border = "2px solid red";
+		}else{
+			formularz[i].style.border = "2px solid green";
+			text += "<td>"+formularz[i].value+"</td>";
+			flag++;
+		}
+	}
+	
+	text += "</tr>";
+	if(flag==3){
+		document.getElementById("tablica").innerHTML += text;
+	}
+ }
+ 
+ </script>
+ 
+ </head>
+ <body>
+ 
+ <div id="box" onclick="myFoo()">
+ wiaj
+ </div>
+ <br><br><br>
+ 
+ <form name="form">
+	<input type="text" name="Name"/>
+	<input type="text" name="LastName"/>
+	<input type="number" name="Old"/>
+ </form>
+ <button onclick="ChechLength()">Sprawdz dlugosc</button>
+ <br><br><br>
+ 
+ 
+ <table id="tablica">
+ <tr>
+ <th>Imie</th><th>Nazwisko</th><th>Wiek</th>
+ </tr>
+ 
+ <tr>
+ <td>Jan</td><td>Kowalski</td><td>22</td>
+ </tr>
+ 
+ </table>
+ 
+ 
+ </body>
+ </html>
+ 
