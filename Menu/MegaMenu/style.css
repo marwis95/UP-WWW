@@ -26,6 +26,38 @@ body{
 	visibility: hidden;
 }
 
+#d1{
+	background-color: #ffffff; 
+	width: 500px; 
+	height:30px;
+	visibility: hidden;
+	font-size:12px;
+}
+
+#d2{
+	background-color: #ffffff; 
+	width: 500px; 
+	height:30px;
+	visibility: hidden;
+	font-size:12px;
+}
+
+#d3{
+	background-color: #ffffff; 
+	width: 500px; 
+	height:30px;
+	visibility: hidden;
+	font-size:12px;
+}
+
+#d4{
+	background-color: #ffffff; 
+	width: 500px; 
+	height:30px;
+	visibility: hidden;
+	font-size:12px;
+}
+
 
 .menu-lvl-1 {
 	margin: 0 auto;

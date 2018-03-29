@@ -34,14 +34,57 @@ $(function(){
 
 
 function menu(){
-	//alert("over");
 	d = document.getElementById("div_menu");
 	d.style.visibility='visible';
 }
 
 function hide_menu(){
-	//alert("over");
 	d = document.getElementById("div_menu");
+	d.style.visibility='hidden';
+}
+
+
+function d1(){
+	d = document.getElementById("d1");
+	d.style.visibility='visible';
+}
+
+
+function hide_d1(){
+	d = document.getElementById("d1");
+	d.style.visibility='hidden';
+}
+
+function d2(){
+	d = document.getElementById("d2");
+	d.style.visibility='visible';
+}
+
+
+function hide_d2(){
+	d = document.getElementById("d2");
+	d.style.visibility='hidden';
+}
+
+function d3(){
+	d = document.getElementById("d3");
+	d.style.visibility='visible';
+}
+
+
+function hide_d3(){
+	d = document.getElementById("d3");
+	d.style.visibility='hidden';
+}
+
+function d4(){
+	d = document.getElementById("d4");
+	d.style.visibility='visible';
+}
+
+
+function hide_d4(){
+	d = document.getElementById("d4");
 	d.style.visibility='hidden';
 }
 </script>
@@ -94,31 +137,31 @@ function hide_menu(){
 <div style="color: #ffffff; font-size: 20px;">Mega Menu</div>
 
         <ul class="mega-menu-lvl-2">
-			<li class="mega-lvl-2"><a href="" title="">Element 1</a></li>
-			<li class="mega-lvl-2"><a href="" title="">Element 2</a></li>
-			<li class="mega-lvl-2"><a href="" title="">Element 3</a></li>
-			<li class="mega-lvl-2"><a href="" title="">Element 4</a></li>
+			<li class="mega-lvl-2" onmouseover="d1()" onmouseout="hide_d1()"><a href="" title="">Element 1</a></li>
+			<li class="mega-lvl-2" onmouseover="d2()" onmouseout="hide_d2()"><a href="" title="">Element 2</a></li>
+			<li class="mega-lvl-2" onmouseover="d3()" onmouseout="hide_d3()"><a href="" title="">Element 3</a></li>
+			<li class="mega-lvl-2" onmouseover="d4()" onmouseout="hide_d4()"><a href="" title="">Element 4</a></li>
         </ul>
 		
 <div style=" width: 500px; height:120px">
 
-	<div style="background-color: #ffffff; width: 500px; height:30px">
-
+	<div id ="d1">
+	tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
 	</div>	
 	
 	
-	<div style="background-color: #ffffff; width: 500px; height:30px">
-
+	<div id ="d2">
+	tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
 	</div>	
 	
 	
-	<div style="background-color: #ffffff; width: 500px; height:30px">
-
+	<div id ="d3">
+	tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
 	</div>	
 	
 	
-	<div style="background-color: #ffffff; width: 500px; height:30px">
-
+	<div id ="d4">
+	tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
 	</div>	
 
 </div>		
