@@ -19,15 +19,47 @@ body{
 	
 }
 
+#div_menu{
+	background-color: #333;
+	width:700px;
+	height:200px;
+	visibility: hidden;
+}
 
 
 .menu-lvl-1 {
 	margin: 0 auto;
 	padding: 0px;
-	background-color: #f3f3f3;
+	background-color: #333;
 	width: 700px;
 	height: 28.3px;
-	
+	border-right: 2px solid white;
+}
+ 
+.mega-menu-lvl-2{
+	float: left;
+	background-color:#f0f0f0;
+}	
+
+.mega-lvl-2:hover a {
+	text-decoration:underline;
+    color:#fff;
+    background-color:#c11;
+}	
+ 
+.mega-lvl-2: {
+    background-color:#f0f0f0;
+}	 
+ 
+.mega{
+	position:relative;
+    float:left;
+}	
+
+.mega:hover a {
+    text-decoration:underline;
+    color:#fff;
+    background:#c11;
 }
  
 .lvl-1 {

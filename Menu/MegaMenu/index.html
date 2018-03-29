@@ -31,12 +31,28 @@ $(function(){
     showIt('.lvl-1')
     showIt('.lvl-2')
 })
+
+
+function menu(){
+	//alert("over");
+	d = document.getElementById("div_menu");
+	d.style.visibility='visible';
+}
+
+function hide_menu(){
+	//alert("over");
+	d = document.getElementById("div_menu");
+	d.style.visibility='hidden';
+}
 </script>
 
 <title>Menu</title>
 </head>
 
 <body>
+
+<div style="position: fixed;">
+<center>
 
 <ul class="menu-lvl-1">
 
@@ -66,11 +82,55 @@ $(function(){
         </ul>
     </li>
 	
-	
-
+	    <li class="mega" onmouseover="menu()" onmouseout="hide_menu()"><a href="" title="">Mega Menu</a></li>
+		
 </ul> 
 
+<!--<p style="float: left; margin-left: 25px; color: #ffffff; font-size: 20px;">Mega Menu</p>-->
 
+
+
+<div id="div_menu" onmouseover="menu()" onmouseout="hide_menu()">
+<div style="color: #ffffff; font-size: 20px;">Mega Menu</div>
+
+        <ul class="mega-menu-lvl-2">
+			<li class="mega-lvl-2"><a href="" title="">Element 1</a></li>
+			<li class="mega-lvl-2"><a href="" title="">Element 2</a></li>
+			<li class="mega-lvl-2"><a href="" title="">Element 3</a></li>
+			<li class="mega-lvl-2"><a href="" title="">Element 4</a></li>
+        </ul>
+		
+<div style=" width: 500px; height:120px">
+
+	<div style="background-color: #ffffff; width: 500px; height:30px">
+
+	</div>	
+	
+	
+	<div style="background-color: #ffffff; width: 500px; height:30px">
+
+	</div>	
+	
+	
+	<div style="background-color: #ffffff; width: 500px; height:30px">
+
+	</div>	
+	
+	
+	<div style="background-color: #ffffff; width: 500px; height:30px">
+
+	</div>	
+
+</div>		
+
+
+</div>
+
+</center>
+
+</div>
+
+<br><br>
 123<br>
 123<br>
 123<br>
